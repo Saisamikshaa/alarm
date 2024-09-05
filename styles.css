@@ -1,0 +1,94 @@
+/* Basic reset for margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Overall body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #e3f2fd; /* Light blue background */
+}
+
+/* Container styling */
+.container {
+    background-color: #ffffff; /* White background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Heading styling */
+h1 {
+    color: #0d47a1; /* Dark blue color */
+    margin-bottom: 20px;
+}
+
+/* Input group styling */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333; /* Dark gray color */
+    font-weight: bold;
+}
+
+.input-group input {
+    padding: 12px;
+    width: calc(100% - 24px); /* Full width minus padding */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #0d47a1; /* Dark blue border on focus */
+}
+
+/* Button styling */
+.btn {
+    background-color: #0d47a1; /* Dark blue background */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #003c8f; /* Darker blue on hover */
+}
+
+/* Status message styling */
+.status-message {
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.status-message {
+    color: #333; /* Default color for status messages */
+}
+
+.status-message.alarm-set {
+    color: #388e3c; /* Green color for alarm set */
+}
+
+.status-message.alarm-ringing {
+    color: #d32f2f; /* Red color for alarm ringing */
+}

@@ -1,33 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>alarm</title>
-    <script src="./alarm.js"></script>
-    <style>
-    body {
-        background-color: linen;
-    }
-      button {
-        display: flex;
-        margin: 10px auto;
-        background-color: black;
-        color: white;
-        border-radius: 10px;
-        height: 25px;
-      }
-      
-      div {
-        height: 100vh;
-        width: 100vw;
-        background-color: rgb(247, 58, 58);
-      }
-      </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <button onclick = "setAlarm(10,1,0)" id="button">play</button>
-    <div id="demo"></div>
+    <div class="container">
+        <h1>Set Alarm</h1>
+        <div class="input-group">
+            <label for="hour">Hour:</label>
+            <input type="number" id="hour" min="0" max="23">
+        </div>
+        <div class="input-group">
+            <label for="minute">Minute:</label>
+            <input type="number" id="minute" min="0" max="59">
+        </div>
+        <div class="input-group">
+            <label for="second">Second:</label>
+            <input type="number" id="second" min="0" max="59">
+        </div>
+        <button class="btn" onclick="setAlarmFromUI()">Set Alarm</button>
+        <p id="alarmStatus" class="status-message"></p>
+    </div>
+
+    <script src="alarm.js"></script>
 </body>
-
 </html>
-
